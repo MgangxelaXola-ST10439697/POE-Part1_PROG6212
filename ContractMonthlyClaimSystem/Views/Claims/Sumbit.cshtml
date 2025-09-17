@@ -1,0 +1,34 @@
+﻿
+@{
+	ViewData["Title"] = "Submit Claim";
+}
+<h4>Submit Monthly Claim</h4>
+<form class="card p-4 shadow-sm">
+    <div class="row g-3">
+        <div class="col-md-6">
+            <label>Lecturer Name</label>
+            <input class="form-control" />
+        </div>
+        <div class="col-md-3">
+            <label>Month</label>
+            <select class="form-select"><option>January</option><option>February</option></select>
+        </div>
+        <div class="col-md-3">
+            <label>Year</label>
+            <input type="number" class="form-control" value="2025" />
+        </div>
+        <div class="col-md-4">
+            <label>Hours Worked</label>
+            <input type="number" class="form-control" />
+        </div>
+        <div class="col-md-4">
+            <label>Hourly Rate</label>
+            <input type="number" class="form-control" />
+        </div>
+        <div class="col-md-4">
+            <label>Total Amount</label>
+            <input class="form-control" disabled placeholder="Auto-calc" />
+        </div>
+    </div>
+    <button class="btn btn-primary mt-3">Submit</button>
+</form>

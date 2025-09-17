@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+}
+<div class="row">
+    <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+            <div class="card-body text-center">
+                <h5 class="card-title">Submit New Claim</h5>
+                <p class="card-text">Enter hours and rates.</p>
+                <a href="@Url.Action("SubmitClaim", "Claims")" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+            <div class="card-body text-center">
+                <h5 class="card-title">View Past Claims</h5>
+                <p class="card-text">Check status of claims.</p>
+                <a href="@Url.Action("ViewClaims", "Claims")" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+            <div class="card-body text-center">
+                <h5 class="card-title">Upload Supporting Docs</h5>
+                <p class="card-text">Attach necessary files.</p>
+                <a href="@Url.Action("UploadDocs", "Documents")" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+    </div>
+</div>
